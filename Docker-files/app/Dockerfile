@@ -1,4 +1,5 @@
-
+FROM ubuntu:20.04
+RUN apt-get update && apt-get install -y git
 
 FROM maven:3.9.9-eclipse-temurin-23-alpine AS build_image
 RUN apt-get update && apt-get install -y git
