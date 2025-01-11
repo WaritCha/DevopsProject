@@ -1,7 +1,7 @@
 
 FROM maven:3.9.9-eclipse-temurin-21-jammy AS BUILD_IMAGE
 RUN git clone https://github.com/WaritCha/DevopsProject.git
-RUN cd DevopsProject && git checkout containers && mvn clean install -X -Dmaven.compile.fork=true -Xmx2048m
+RUN cd DevopsProject && git checkout containers && mvn clean install
 
 
 
