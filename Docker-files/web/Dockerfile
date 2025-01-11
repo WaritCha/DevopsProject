@@ -1,6 +1,6 @@
 FROM nginx
 LABEL "Project"="Vprofile"
-LABEl "Author"="Warit"
+LABEL "Author"="Warit"
 
 RUN rm -rf etc/nginx/conf.d/default.conf
 COPY nginvproapp.conf etc/nginx/conf.d/vproapp.conf
