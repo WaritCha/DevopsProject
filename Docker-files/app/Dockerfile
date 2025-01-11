@@ -1,6 +1,6 @@
 
-FROM maven:amazoncorretto AS BUILD_IMAGE
-RUN install git && git clone https://github.com/WaritCha/DevopsProject.git
+FROM maven:3.9.9-eclipse-temurin-23-alpine AS BUILD_IMAGE
+RUN git clone https://github.com/WaritCha/DevopsProject.git
 RUN cd DevopsProject && git checkout containers && mvn clean install
 
 
